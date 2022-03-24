@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text-custom">
         I know that <span>Great Devolopment</span>
         <br /> means <span>Great Business</span>
       </h2>
@@ -33,10 +33,10 @@ const About = () => {
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt="about.title" />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <h2 className="bold-text-custom-green" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
+            <p className="p-text-custom" style={{ marginTop: 10 }}>
               {about.description}
             </p>
           </motion.div>
@@ -49,5 +49,5 @@ const About = () => {
 export default AppWrap(
   MotionWrap(About, "app__about"),
   "about",
-  "app__whitebg"
+  "app__blackbg"
 );

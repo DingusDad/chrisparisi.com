@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text-custom-orange">Skills & Experience</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -42,7 +42,7 @@ const Skills = () => {
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className="p-text-custom">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -63,8 +63,8 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <h4 className="bold-text-custom-green">{work.name}</h4>
+                      <p className="p-text-custom">{work.company}</p>
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
@@ -88,5 +88,5 @@ const Skills = () => {
 export default AppWrap(
   MotionWrap(Skills, "app__skills"),
   "skills",
-  "app__whitebg"
+  "app__blackbg"
 );

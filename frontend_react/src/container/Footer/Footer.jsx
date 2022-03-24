@@ -41,16 +41,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Have a chat with me</h2>
+      <h2 className="head-text-custom-orange">Have a chat with me</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
-          <img src={images.email} alt="email" />
+          <img src={images.email1} alt="email" />
           <a href="mailto:parisichris7@gmail.com" className="p-text">
             parisichris7@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="email" />
+          <img src={images.smartphone} alt="email" />
           <a href="tel:parisichris7@gmail.com" className="p-text">
             google voice number
           </a>
@@ -94,13 +94,13 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="head-text-custom">Thank you for getting in touch!</h3>
         </div>
       )}
 
       <div className="copyright">
-        <p className="p-text">2022 Chris Parisi</p>
-        <p className="p-text">All rights reserved</p>
+        <p className="p-text-custom">2022 Chris Parisi</p>
+        <p className="p-text-custom">All rights reserved</p>
       </div>
     </>
   );
@@ -109,5 +109,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, "app__footer"),
   "contact",
-  "app__whitebg"
+  "app__blackbg"
 );
