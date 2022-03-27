@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 import { images } from "../../constants";
@@ -21,6 +23,29 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className="app__navbar-social">
+        <div>
+          <a
+            href="https://github.com/chrisparisi"
+            target="_blank"
+            rel="noreferrer"
+            alt="link to github"
+          >
+            <AiFillGithub />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/chrisparisi7/"
+            target="_blank"
+            rel="noreferrer"
+            alt="link to linkedin"
+          >
+            <FaLinkedinIn />
+          </a>
+        </div>
+      </div>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

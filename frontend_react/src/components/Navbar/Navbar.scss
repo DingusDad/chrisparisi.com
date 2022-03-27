@@ -31,6 +31,22 @@
   }
 }
 
+.app__navbar-social {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    margin: 0rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
 .app__navbar-links {
   flex: 1;
   display: flex;
