@@ -107,7 +107,13 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex">
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                  <AiFillGithub className="app__work-tag-mobile" />
+                </a>
                 <p className="p-text">{work.tags[0]}</p>
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                  <AiFillEye className="app__work-tag-mobile" />
+                </a>
               </div>
             </div>
           </div>
