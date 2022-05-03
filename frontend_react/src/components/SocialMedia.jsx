@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const SocialMedia = () => {
@@ -10,7 +10,7 @@ const SocialMedia = () => {
           href="https://github.com/chrisparisi"
           target="_blank"
           rel="noreferrer"
-          alt="link to github"
+          alt="link to Github"
         >
           <AiFillGithub />
         </a>
@@ -20,9 +20,19 @@ const SocialMedia = () => {
           href="https://www.linkedin.com/in/chrisparisi7/"
           target="_blank"
           rel="noreferrer"
-          alt="link to linkedin"
+          alt="link to Linkedin"
         >
           <FaLinkedinIn />
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://twitter.com/ChrisParisiDev"
+          target="_blank"
+          rel="noreferrer"
+          alt="link to Twitter"
+        >
+          <AiFillTwitterCircle />
         </a>
       </div>
     </div>
