@@ -50,15 +50,23 @@
   z-index: 3;
 
   h1 {
-    font-size: 8rem;
+    font-size: 12rem;
+  }
+
+  h2 {
+    font-size: 5.3rem;
+    font-weight: 100;
+    color: rgb(61, 61, 61);
   }
 
   h3 {
     font-size: 3rem;
     font-weight: 100;
+    color: rgb(61, 61, 61);
   }
 
   h1,
+  h2,
   h3 {
     line-height: 90%;
     padding: 0px;

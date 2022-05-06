@@ -17,8 +17,8 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <div>
               <h1>CHRIS PARISI</h1>
-              <h3>Fullstack Developer</h3>
-              <h3>/MongoDB - Express - ReactJS - NodeJS</h3>
+              <h2>FULLSTACK DEVELOPER</h2>
+              <h3>MONGODB//EXPRESS//REACTJS//NODEJS</h3>
             </div>
           </div>
         </div>
