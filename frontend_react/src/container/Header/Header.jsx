@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import WAVES from 'vanta/dist/vanta.waves.min';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
 
 const Header = () => {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        WAVES({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x596e7d,
+          shininess: 74.0,
+          waveHeight: 18.0,
+          zoom: 1.07,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
     <div id="home" className="app__header app__flex">
       <motion.div
@@ -17,8 +44,21 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <div>
               <h1>CHRIS PARISI</h1>
-              <h2>FULLSTACK DEVELOPER</h2>
-              <h3>MONGODB//EXPRESS//REACTJS//NODEJS</h3>
+              <div className="app__header-container">
+                <div className="app__header-container-left">
+                  <h2>FULLSTACK DEVELOPER</h2>
+                  <h3>MONGODB//EXPRESS//REACTJS//NODEJS</h3>
+                </div>
+                <div className="app__header-container-right">
+                  {[images.node, images.react1, images.redux].map(
+                    (circle, index) => (
+                      <div className="circle-header" key={`circle-${index}`}>
+                        <img src={circle} alt="circle" />
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -27,14 +67,9 @@ const Header = () => {
       <motion.div
         whileInView={{ x: [400, 0], opacity: [0, 1] }}
         transition={{ duration: 2 }}
-        className="app__header-circles"
-      >
-        {[images.node, images.react1, images.redux].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
-      </motion.div>
+        className="app__header-right-slide"
+        ref={myRef}
+      ></motion.div>
     </div>
   );
 };
