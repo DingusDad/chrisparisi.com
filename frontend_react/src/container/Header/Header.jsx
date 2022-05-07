@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import WAVES from 'vanta/dist/vanta.waves.min';
+import TOPOLOGY from 'vanta/dist/vanta.topology.min';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
@@ -12,7 +12,7 @@ const Header = () => {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        WAVES({
+        TOPOLOGY({
           el: myRef.current,
           mouseControls: true,
           touchControls: true,
@@ -21,10 +21,8 @@ const Header = () => {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color: 0x596e7d,
-          shininess: 74.0,
-          waveHeight: 18.0,
-          zoom: 1.07,
+          color: 0x4a522c,
+          backgroundColor: 0xbebebe,
         })
       );
     }

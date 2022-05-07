@@ -14,17 +14,6 @@
   }
 }
 
-.app__header-right-slide {
-  display: flex;
-  right: 0;
-  background-color: aqua;
-  height: 90%;
-  width: 70%;
-  position: absolute;
-  -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
 .app__header {
   flex: 1;
   width: 100%;
@@ -115,6 +104,17 @@
       }
     }
   }
+}
+
+.app__header-right-slide {
+  display: flex;
+  right: 0;
+  background-color: aqua;
+  height: 90vh;
+  width: 70%;
+  position: absolute;
+  -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .app__header-badge {
