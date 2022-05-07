@@ -41,7 +41,7 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <div>
+            <div className="app__header-main">
               <h1>CHRIS PARISI</h1>
               <div className="app__header-container">
                 <div className="app__header-container-left">
