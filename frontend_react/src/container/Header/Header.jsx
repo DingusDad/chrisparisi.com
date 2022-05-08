@@ -37,6 +37,7 @@ const Header = () => {
       <motion.div
         whileInView={{ x: [-400, 0], opacity: [0, 1] }}
         transition={{ duration: 2 }}
+        viewport={{ once: true }}
         className="app__header-info"
       >
         <div className="app__header-badge">
@@ -66,6 +67,7 @@ const Header = () => {
       <motion.div
         whileInView={{ x: [400, 0], opacity: [0, 1] }}
         transition={{ duration: 2 }}
+        viewport={{ once: true }}
         className="app__header-right-slide"
         ref={myRef}
       ></motion.div>
