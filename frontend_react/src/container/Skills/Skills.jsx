@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import ReactTooltip from "react-tooltip";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import ReactTooltip from 'react-tooltip';
 
-import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
-import "./Skills.scss";
+import { AppWrap, MotionWrap } from '../../wrapper';
+import { urlFor, client } from '../../client';
+import './Skills.scss';
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -70,8 +70,8 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <h4 className="bold-text">{work.company}</h4>
+                      <p className=" p-text">{work.name}</p>
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
@@ -93,7 +93,7 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, "app__skills"),
-  "skills",
-  "app__whitebg"
+  MotionWrap(Skills, 'app__skills'),
+  'skills',
+  'app__whitebg'
 );

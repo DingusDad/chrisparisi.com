@@ -71,6 +71,14 @@
   }
 }
 
+.notice {
+  margin-top: 10px;
+
+  span {
+    color: var(--secondary-color);
+  }
+}
+
 .p-text {
   font-size: 0.8rem;
   text-align: left;
