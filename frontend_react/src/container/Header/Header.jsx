@@ -21,9 +21,9 @@ const Header = () => {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color: 0x738783,
-          color2: 0xc3c3c3,
-          backgroundColor: 0xc3c3c3,
+          color: 0xf7f7f7,
+          color2: 0x738783,
+          backgroundColor: 0x738783,
         })
       );
     }

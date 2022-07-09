@@ -23,11 +23,11 @@ const Skills = () => {
     });
   }, []);
 
-  function sortExperiencesByYear() {
+  const sortExperiencesByYear = () => {
     return experiences.sort((a, b) => {
       return a.year - b.year;
     });
-  }
+  };
 
   sortExperiencesByYear();
 
