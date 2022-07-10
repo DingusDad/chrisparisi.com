@@ -43,7 +43,8 @@ const Work = () => {
         My Creative <span>Portfolio</span> Projects
       </h2>
       <h3 className="notice">
-        Check out the <span>README</span> for more info on each project
+        Check out the <span>README</span> on <span>Github</span> for more info
+        on each project
       </h3>
       <div className="app__work-filter">
         {['UI/UX', 'Web App', 'React JS', 'All'].map((item, index) => (
