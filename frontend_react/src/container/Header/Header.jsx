@@ -46,7 +46,7 @@ const Header = () => {
               <h1>CHRIS PARISI</h1>
               <div className="app__header-container">
                 <div className="app__header-container-left">
-                  <h2>FULLSTACK DEVELOPER</h2>
+                  <h2>FULL STACK DEVELOPER</h2>
                   <h3>MONGODB//EXPRESS//REACTJS//NODEJS</h3>
                 </div>
                 <div className="app__header-container-right">

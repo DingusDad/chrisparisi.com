@@ -68,16 +68,16 @@
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.95rem;
     font-weight: 100;
     color: rgb(61, 61, 61);
 
     @media screen and (max-width: 1200px) {
-      font-size: 3.35rem;
+      font-size: 3.25rem;
     }
 
     @media screen and (max-width: 450px) {
-      font-size: 1.7rem;
+      font-size: 1.67rem;
       padding-left: 1rem;
     }
   }
