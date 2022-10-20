@@ -27,8 +27,8 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that <span>Great Devolopment</span>
-        <br /> means <span>Great Business</span>
+        Great <span>Software Devolopment</span>
+        <br /> requires <span>thoughtful solutions</span>
       </h2>
 
       <div className="app__profiles">

@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span> Projects
+        My <span>Portfolio</span> Projects
       </h2>
       <h3 className="notice">
         Check out the <span>README</span> on <span>Github</span> for more info
