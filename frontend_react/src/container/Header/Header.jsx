@@ -47,7 +47,7 @@ const Header = () => {
               <div className="app__header-container">
                 <div className="app__header-container-left">
                   <h2>FULL STACK DEVELOPER</h2>
-                  <h3>MONGODB//EXPRESS//REACTJS//NODEJS</h3>
+                  <h3>REACTJS // NODEJS // ANGULAR // .NET</h3>
                 </div>
                 <div className="app__header-container-right">
                   {[images.node, images.react1, images.redux].map(
